@@ -2,15 +2,43 @@
     height: 100vh;
 }
 
+.card {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    &-title {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+
+    &-text {
+        font-size: 14px;
+        color: #3f4041;
+        margin-bottom: 30px;
+    }
+
+    &-img-top {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+}
+
 .btns {
     .btn {
         border-radius: 50%;
+        background-color: rgb(37, 37, 37);
+        border: rgb(37, 37, 37);
     }
 }
 
 
 
 .card--footer {
+    padding-bottom: 30px;
+
     &_bullet {
         background-color: grey;
         width: 7px;
@@ -22,5 +50,5 @@
 .active {
     width: 25px;
     border-radius: 25px;
-    background-color: black;
+    background-color: rgb(37, 37, 37);
 }
