@@ -13,7 +13,7 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 export class EscenaComponent {
   faArrowRight: any = faArrowRight;
   faArrowLeft: any = faArrowLeft;
-  slide: any = 0;
+  slide: number = 0;
 
   @Input() phrases!: IStep[];
 

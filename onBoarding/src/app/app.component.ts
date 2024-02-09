@@ -13,5 +13,5 @@ import { HomeComponent } from './components/home/home.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'onBoarding';
+  title = 'Sprint 5';
 }
