@@ -9,10 +9,10 @@
             <p class="card-text">{{ phrase.description}}</p>
             <div class="card--footer d-flex justify-content-between">
                 <div class="card--footer_bullets d-flex align-items-center gap-3">
-                    @for (phares of phrases; track $index) {
-                    <button (click)="bullet($index)" [class.active]="slide === $index"
-                        class="card--footer_bullet"></button>
-                    }
+                    <!-- @for (phares of phrases; track $index) { -->
+                    <button (click)="bullet(i)" [class.active]="slide === i" class="card--footer_bullet"
+                        *ngFor="let ph of phrases; let i = index"></button>
+                    <!-- } -->
                 </div>
                 <div class="btns d-flex gap-3">
                     @if(slide > 0) {
