@@ -63,9 +63,10 @@
 
     &_bullet {
         background-color: grey !important;
-        width: 7px !important;
-        height: 7px !important;
+        width: 12px !important;
+        height: 12px !important;
         border-radius: 50% !important;
+        border: none;
     }
 }
 
