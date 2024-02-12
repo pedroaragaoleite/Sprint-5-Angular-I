@@ -89,4 +89,10 @@ export class EscenaComponent {
 
     }
   }
+
+  bullet(id: number): void {
+    console.log(id);
+
+    this.slide = id;
+  }
 }
