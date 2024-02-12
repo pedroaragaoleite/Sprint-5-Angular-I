@@ -5,11 +5,6 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 
-
-
-
-
-
 @Component({
   selector: 'app-escena',
   standalone: true,
@@ -88,5 +83,10 @@ export class EscenaComponent {
       // console.log(this.moveLeft);
 
     }
+  }
+  bullet(id:number) :void { 
+    console.log(id);
+       
+    this.slide = id;   
   }
 }
