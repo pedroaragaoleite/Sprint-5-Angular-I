@@ -62,15 +62,15 @@
     padding-bottom: 30px;
 
     &_bullet {
-        background-color: grey;
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
+        background-color: grey !important;
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 50% !important;
     }
 }
 
 .active {
-    width: 25px;
-    border-radius: 25px;
-    background-color: rgb(37, 37, 37);
+    width: 25px !important;
+    border-radius: 25px !important;
+    background-color: rgb(37, 37, 37) !important;
 }
