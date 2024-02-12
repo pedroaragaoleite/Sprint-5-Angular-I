@@ -48,6 +48,7 @@ export class EscenaComponent {
   slide: number = 0;
   isMovingFront = true;
   isMovingBack = true;
+  isFadding = true;
   isFade = true;
 
   @Input() phrases!: IStep[];
@@ -87,6 +88,12 @@ export class EscenaComponent {
   }
 
   bullet(id: number): void {
-    this.slide = id;
+    this.isFade = !this.isFade;
+    setTimeout(() => {
+      this.slide = id;
+      this.isFade = true;
+    }, 1000)
+
+
   }
 }
