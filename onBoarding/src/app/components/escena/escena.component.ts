@@ -3,12 +3,13 @@ import { IStep } from '../../interfaces/i-step';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { NgFor } from '@angular/common';
 
 
 @Component({
   selector: 'app-escena',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, NgFor],
   templateUrl: './escena.component.html',
   styleUrl: './escena.component.scss',
   animations: [
@@ -84,17 +85,10 @@ export class EscenaComponent {
 
     }
   }
-<<<<<<< HEAD
 
   bullet(id: number): void {
     console.log(id);
 
     this.slide = id;
-=======
-  bullet(id:number) :void { 
-    console.log(id);
-       
-    this.slide = id;   
->>>>>>> 812f44a7aeaa75a6aa1c943b1294af02ec33b693
   }
 }
